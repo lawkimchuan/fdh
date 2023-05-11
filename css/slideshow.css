@@ -1,0 +1,97 @@
+/* ---------------------------------------------------- */
+/* SLIDESHOW
+/* ---------------------------------------------------- */
+#slideshow {
+	width: 960px;
+	background-color: #F4F4DC;
+}
+#slideshow ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 1%; /* IE fix */
+}
+#slideshow ul:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* ---------------------------------------------------- */
+/* SLIDESHOW > SLIDES
+/* ---------------------------------------------------- */
+#slideshow .slides {
+	overflow: hidden;
+	width: 960px;
+}
+#slideshow .slides ul {
+	width: 2880px;
+}
+#slideshow .slides li {
+	width: 960px;
+	float: left;
+	padding: 0px;
+	margin: 0;
+}
+#slideshow .slides h2 {
+	margin-top: 0;
+}
+
+#slideshow .caption {
+	background-color: #a29060;
+	background-color: rgba(100,90,60,.5);
+	color: #FFF;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	position: absolute;
+	z-index: 20;
+	bottom: 0px;
+	text-align:center;
+
+}
+/* ---------------------------------------------------- */
+/* SLIDESHOW > NAVIGATION
+/* ---------------------------------------------------- */
+#slideshow .slides-nav {
+	/*background-color: #a29060;*/
+	background-color: #F4F4DC;
+	/*background-color: rgba(0,0,0,.3);*/
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height:auto;
+	position: relative;
+	bottom: 0px;
+	left: 0;
+	z-index: 10;
+}
+#slideshow .slides-nav li {
+	float: left;
+}
+#slideshow .slides-nav li a {
+	display: block;
+	padding: 5px;
+	padding-bottom: 0;
+	outline: none;
+	opacity:.7;
+	filter:alpha(opacity=70);
+}
+.js #slideshow .slides-nav li.on, .js #slideshow .slides-nav li.on a {
+	background-color: #594E24;
+	/*background-color: rgba(244,244,220,.4);*/
+	/*background-color: rgba(117,24,27,.8);*/
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;	
+}
+.js #slideshow .slides-nav li.on a {
+	/*
+	position: relative;
+	top: 0px;
+	*/
+	opacity:1;
+	filter:alpha(opacity=100);
+	
+}
